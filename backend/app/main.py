@@ -15,10 +15,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# @app.get("/users/", response_model=list[schemas.User])
-# def read_users(skip: int = 0, limit: int = 100, db_session: Session = Depends(db.get_db)):
-#     return crud.get_users(db_session, skip=skip, limit=limit)
-
 @app.get("/users/", response_model=list[schemas.User])
 def read_users(db_session: Session = Depends(db.get_db)):
     return crud.get_users(db_session)
