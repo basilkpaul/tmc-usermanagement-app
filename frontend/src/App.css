@@ -1,0 +1,153 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+  padding: 32px;
+}
+
+h2 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.tmc-form{
+    margin-bottom: 18px; 
+    display: flex; 
+    gap: 6px; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}  
+.tmc-page-header {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  background: #fff;
+}
+
+.tmc-form{
+    margin-bottom: 18px; 
+    display: flex; 
+    gap: 6px; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}  
+.tmc-input-custom{
+    padding: 6px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-right: 6px;
+    border: 1px solid #ccc;
+    width: 130px;
+}
+
+.tmc-user-tbl{
+   width:100%;
+   border-collapse:collapse ; 
+   box-shadow:0 1px 4px rgba(0,0,0,0.08) ;
+}
+
+.tmc-user-tbl thead tr{
+   background: #f1f6fc;
+
+} 
+.tmc-user-tbl thead td{
+  padding: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}   
+.tmc-user-tbl tbody td{
+   padding: 6px;
+} 
+.tmc-user-names{
+   padding: 6px;
+} 
+.tmc-user-otherfields{
+   text-align: center;
+}
+.tmc-submit-btn{
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 4px;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.tmc-del-btn{
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 4px;    
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  background: #dc3545;
+}
+.tmc-no-message{
+  text-align: center;
+   padding: 12px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 18px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f1f6fc;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 16px;
+    max-width: 100%;
+  }
+}
