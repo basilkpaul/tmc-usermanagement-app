@@ -3,8 +3,8 @@ services:
     image: postgres:15
     restart: always
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: Codeanything@2025
       POSTGRES_DB: usersdb
     ports:
       - "5432:5432"
@@ -15,7 +15,7 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgresql://user:password@db:5432/usersdb
+      DATABASE_URL: postgresql://admin:Codeanything@2025@db:5432/usersdb
     ports:
       - "8000:8000"
   frontend:
